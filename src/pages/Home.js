@@ -127,7 +127,7 @@ const Home = () => {
             <div className="text-center h-52 mx-20 rounded-xl shadow-xl md:mx-0">
               <h1
                 className={`${
-                  dark ? "text-white" : "text-black"
+                  dark ? "text-white border-2 border-black" : "text-black"
                 } py-10 font-mont font-bold text-4xl md:text-3xl `}
               >
                 Yes You Are Right...I am JavaScript Buff
@@ -135,9 +135,9 @@ const Home = () => {
             </div>
           </div>
           <div
-            className={`"md:mx-5 mx-32 shadow-2xl ${
-              dark ? "bg-bg" : "bg-gray-200"
-            } -mt-36 rounded-xl "`}
+            className={`md:mx-5 mx-32 shadow-2xl ${
+              dark ? "bg-bg text-white" : "bg-gray-100 text-black"
+            } -mt-36 rounded-xl`}
           >
             <div className="h-96">
               <lottie-player
@@ -149,11 +149,7 @@ const Home = () => {
               ></lottie-player>
             </div>
 
-            <p
-              className={`${
-                dark ? "text-white" : "text-black"
-              } text-2xl my-5 px-14 py-10 font-semibold md:px-5 `}
-            >
+            <p className="text-2xl my-5 px-14 py-10 font-semibold md:px-5">
               JavaScript is one of the most top-ranked programming languages
               because of its ubiquitous use on all platforms and mass adoption.
               Main use cases: Web development
@@ -171,9 +167,9 @@ const Home = () => {
               </h1>
             </div>
             <div
-              className={`"md:mx-5 mx-32 shadow-2xl ${
+              className={`md:mx-5 mx-32 shadow-2xl ${
                 dark ? "bg-bg text-white" : "bg-gray-100 text-black"
-              } -mt-20 rounded-xl"`}
+              } -mt-20 rounded-xl`}
             >
               <div className="h-96">
                 <lottie-player
