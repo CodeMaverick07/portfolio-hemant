@@ -75,8 +75,16 @@ const Contact = () => {
             </div>
           </div>
           <div className="w-screen flex justify-center rounded-xl">
-            <div className="md:w-full w-1/2  p-10 shadow-2xl bg-gray-100 mt-10 ">
-              <h1 className="text-2xl font-semibold">
+            <div
+              className={`md:w-full w-1/2  p-10 shadow-2xl ${
+                dark ? "bg-bg" : "bg-gray-100"
+              } mt-10 `}
+            >
+              <h1
+                className={`${
+                  dark ? "text-white" : "text-black"
+                } text-2xl font-semibold`}
+              >
                 Contact Me to Know More
               </h1>
               <input
