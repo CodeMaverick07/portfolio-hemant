@@ -6,7 +6,7 @@ const { useState } = require("react");
 const darkModeContext = createContext();
 
 function DarkModeProvider({ children }) {
-  const [dark, setDark] = useState();
+  const [dark, setDark] = useState(true);
   function darkModeHandler() {
     setDark((prev) => !prev);
     console.log(dark);
