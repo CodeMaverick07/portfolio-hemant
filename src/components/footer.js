@@ -81,7 +81,7 @@ function Footer() {
                   />
                 </a>
               </div>
-              <div className="h-1 border-2 border-dotted border-black "></div>
+              <div className={`h-1 border-2 border-dotted ${ dark ? "border-white" : "border-black "}`}></div>
 
               <p className={`${dark ? "text-white" : "text-black"} pt-2 `}>
                 Hemant Jatal.V
