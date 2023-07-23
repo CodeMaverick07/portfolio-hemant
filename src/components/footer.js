@@ -37,7 +37,7 @@ function Footer() {
               <p className={`${dark ? "text-white" : "text-black"} pb-2 `}>
                 Designed and Developed by
               </p>
-              <div className="h-1 border-2 border-dotted border-black "></div>
+              <div className={`h-1 border-2 border-dotted ${ dark ? "border-white" : "border-black "}`}></div>
               <div className="items-center flex w-full justify-between py-2">
                 <a href="tel:+919130921658">
                   <FaPhoneAlt
