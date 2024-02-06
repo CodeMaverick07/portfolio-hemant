@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { MdDarkMode, MdLightMode } from "react-icons/md";
@@ -16,16 +15,16 @@ const Header = () => {
   const menuItems = [
     {
       title: "Home",
-      key: "/",
+      key: "#home",
     },
     {
       title: "Projects",
-      key: "/projects",
+      key: "#projects",
     },
 
     {
       title: "Contact",
-      key: "/contact",
+      key: "#contact",
     },
   ];
 
@@ -43,7 +42,7 @@ const Header = () => {
         }`}
       >
         <div className="flex justify-between items-center w-full">
-          <Link to="/">
+          <a href="#home">
             <h1
               className={`text-2xl font-semibold font-mont mx-3 md:mt-0 border-2 rounded-lg p-2 ${
                 dark
@@ -53,7 +52,7 @@ const Header = () => {
             >
               Hemant
             </h1>
-          </Link>
+          </a>
           <div className="md:flex lg:hidden xl:hidden 2xl:hidden ">
             <button
               onClick={darkModeHandler}
@@ -108,7 +107,7 @@ const Header = () => {
                   }  rounded-md `
                 }`}
               >
-                <Link to={`${item.key}`}>{item.title}</Link>
+                <a href={`${item.key}`}>{item.title}</a>
               </li>
             );
           })}
@@ -129,7 +128,7 @@ const Header = () => {
                   } `
                 }`}
               >
-                <Link to={`${item.key}`}>{item.title}</Link>
+                <a href={`${item.key}`}>{item.title}</a>
               </li>
             );
           })}
