@@ -10,7 +10,7 @@ const projectData = [
     title: "Hack-ai-thon",
     image: "./hackthon.png",
     description: "Hackthon Information website for council",
-    link: "hhttps://hack-ai-thon-sable.vercel.app/",
+    link: "https://hack-ai-thon-sable.vercel.app/",
     git: "https://github.com/CodeMaverick07/Hack-ai-thon",
   },
   {
